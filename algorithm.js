@@ -15,7 +15,10 @@ for(let i=0 ; i<256 ; i++){
 }
 
 gridDivEl.forEach(div => div.addEventListener('mouseover', function(){
-    div.style.backgroundColor ='white';
+    let runDCR = Math.floor(Math.random() * 255);
+    let runDCG = Math.floor(Math.random() * 255);
+    let runDCB = Math.floor(Math.random() * 255);
+    div.style.backgroundColor =`rgb(${runDCR}, ${runDCG}, ${runDCB})`;
 }))
 
 function gridSetUp(row , column){
@@ -34,7 +37,10 @@ function gridSetUp(row , column){
         gridDivEl.push(div);
     }
     gridDivEl.forEach(div => div.addEventListener('mouseover', function(){
-        div.style.backgroundColor ='white';
+        let runDCR = Math.floor(Math.random() * 255);
+        let runDCG = Math.floor(Math.random() * 255);
+        let runDCB = Math.floor(Math.random() * 255);
+        div.style.backgroundColor =`rgb(${runDCR}, ${runDCG}, ${runDCB})`;
     }))
 }
 
